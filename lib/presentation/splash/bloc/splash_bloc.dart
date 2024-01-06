@@ -1,4 +1,3 @@
-
 import 'package:equatable/equatable.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
@@ -15,9 +14,9 @@ class SplashBloc extends Bloc<SplashEvent, SplashState> {
   }
 
   _onInitialize(SplashInitEvent event, Emitter<SplashState> emit) async {
-    Future.delayed(const Duration(milliseconds:  3600), () {
+    Future.delayed(const Duration(milliseconds: 3600), () {
       NavUtils.pushNameAndRemoveUtil(
-        AppRoutes.startedScreen,
+        AppRoutes.HomePage,
       );
     });
   }

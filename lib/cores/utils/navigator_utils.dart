@@ -24,3 +24,7 @@ class NavUtils {
         ?.popAndPushNamed(routeName, arguments: args);
   }
 }
+
+class NavArgs {
+  static String id = "id";
+}

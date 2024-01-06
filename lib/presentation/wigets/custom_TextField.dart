@@ -1,4 +1,4 @@
-// ignore_for_file: must_be_immutable, constant_identifier_names
+// ignore_for_file: file_names
 
 import 'package:flutter/material.dart';
 import 'package:nhatlieu/cores/utils/colr_utils.dart';
@@ -121,7 +121,6 @@ class CustomTextField extends StatelessWidget {
           fontSize: getFontSize(
             14,
           ),
-        
           fontWeight: FontWeight.w500,
           height: getVerticalSize(
             1.25,
@@ -213,7 +212,7 @@ class CustomTextField extends StatelessWidget {
 
   _setPadding() {
     switch (padding) {
-        case TextFormFieldPadding.PaddingAll25:
+      case TextFormFieldPadding.PaddingAll25:
         return getPadding(
           all: 15,
         );

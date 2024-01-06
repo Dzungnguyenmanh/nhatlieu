@@ -1,6 +1,5 @@
 import 'dart:async';
 
-
 import 'package:equatable/equatable.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
@@ -21,12 +20,9 @@ class LoginScreenBloc extends Bloc<LoginScreenEvent, LoginScreenState> {
         passwordController: TextEditingController(),
         isShowPass: true));
   }
+
   FutureOr<void> _callCreateLogin(
     CreateLoginEvent event,
     Emitter<LoginScreenState> emit,
-  ) async {
-    
-  }
-
-
+  ) async {}
 }
